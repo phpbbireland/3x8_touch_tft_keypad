@@ -56,7 +56,7 @@
 #define DEBUG1 1
 #define DEBUG2 0
 
-#define PW 130656
+#define PW 123456 // test password
 
 int pass = false;
 
@@ -349,7 +349,6 @@ void process_b_list_item_and_stuffkey_on_touch(String str)
         Keyboard.releaseAll();
         delay(DELAY_TERMI);
         //if(pass) { Keyboard.print(PW); delay(PREMACRO); Keyboard.write(KEY_RETURN); }/opt/sublime_text/sublime_text
-
         keyboard_print_macro(str);
         Keyboard.write(KEY_RETURN);
         Keyboard.releaseAll();
